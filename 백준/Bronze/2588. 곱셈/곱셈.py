@@ -15,7 +15,7 @@ for i in range(3) :
 print(total)
     
 
-#### 다른 사람 풀이
+# 다른 사람 풀이
 
 a = int(input())
 b = int(input())
