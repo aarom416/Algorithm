@@ -14,7 +14,7 @@ else :
     M = M-45
     print(f"{H} {M}")
 
-# 다른 풀이
+##### 다른 풀이
 
 H, M = map(int, input().split())
 timer = int(input()) 
