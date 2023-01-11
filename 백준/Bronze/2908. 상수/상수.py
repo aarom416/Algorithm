@@ -12,3 +12,4 @@ a, b = input().split()
 a = int(a[::-1]) #문자열[::-1] 하면 역순
 b = int(b[::-1]) 
 print(max(a, b))
+ 
