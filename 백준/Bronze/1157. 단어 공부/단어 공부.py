@@ -24,5 +24,5 @@ for i in string:
 if string_cnt.count(max(string_cnt)) > 1:  # 최대값이 2개 이상인 경우
     print("?")
 else:
-    max_idx = string_cnt.index(max(string_cnt))  # 최대값 인덱스 저장
+    max_idx = string_cnt.index(max(string_cnt))  # 최대값 인덱스 저장 
     print(string[max_idx])
