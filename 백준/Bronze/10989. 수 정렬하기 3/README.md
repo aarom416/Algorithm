@@ -1,4 +1,4 @@
-# [Bronze I] 수 정렬하기 3 - 10989 
+# [Bronze I] 수 정렬하기 3 - 메모리 초과 - 10989 
 
 [문제 링크](https://www.acmicpc.net/problem/10989) 
 
