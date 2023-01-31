@@ -59,3 +59,29 @@ for i in s1:
         a.append(i)
 answer.append(puls_minus(multi_div(a))) #괄호 연산이 없으면 순서대로 함수처리
 print(answer[-1])
+
+#다른 풀이
+strn = list(input())
+stack=[]
+res=''
+for s in strn:
+    if s.isalpha():
+        res+=s
+    else:
+        if s == '(':
+            stack.append(s)
+        elif s == '*' or s == '/':
+            while stack and (stack[-1] == '*' or stack[-1] =='/'):
+                res += stack.pop()
+            stack.append(s)
+        elif s == '+' or s == '-':
+            while stack and stack[-1] != '(':
+                res+= stack.pop()
+            stack.append(s)
+        elif s == ')':
+            while stack and stack[-1] != '(':
+                res += stack.pop()
+            stack.pop()
+while stack :
+    res+=stack.pop()
+print(res)
