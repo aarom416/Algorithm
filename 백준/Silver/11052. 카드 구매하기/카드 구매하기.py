@@ -14,4 +14,23 @@ for i in range(1,n+1):
         j-=1
 print(dp[n])
 
+#다른 풀이
+n = int(input())
+p = list(map(int, input().split()))
+p.insert(0,0)
+dp = [0 for _ in range(n+1)]
+
+for i in range(1, n+1):
+    for j in range(1,i+1):
+        dp[i] = max(dp[i], p[j] + dp[i-j])
+print(dp[n])
+3 5 15 16 을 예시로 들자.
+
+#dp[1] 은 언제나 p[1] 과 동일할 것이므로 3
+#dp[2] 는 dp[1] + p[1] 또는 p[2] 둘 중 큰 값일 것이므로 8
+#dp[3] 은 dp[1] + p[2] , dp[2] + p[1] , p[3] 중 큰 값일 것이므로 15
+#마지막으로 dp[4] 는 dp[1] + p[3] , dp[2] + p[2] , dp[3] + p[1] , p[4] 중 큰 값이므로 18
+
+ 
+
 
