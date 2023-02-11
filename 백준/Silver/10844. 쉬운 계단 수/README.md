@@ -26,3 +26,6 @@
 
  <p>첫째 줄에 정답을 1,000,000,000으로 나눈 나머지를 출력한다.</p>
 
+
+###해결 과정 참조
+![image](https://user-images.githubusercontent.com/106041072/218274020-5530550b-578e-4199-bd06-add3876400df.png)
