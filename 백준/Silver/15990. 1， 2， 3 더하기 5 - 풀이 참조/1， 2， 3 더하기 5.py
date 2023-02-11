@@ -1,3 +1,4 @@
+#풀이 참조
 import sys
 t = int(sys.stdin.readline().rstrip())
 dp=[[0 for _ in range(3)] for _ in range(100001)]
