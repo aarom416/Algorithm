@@ -22,3 +22,7 @@
 
  <p>첫째 줄에 경우의 수를 출력한다.</p>
 
+### 풀이 참조  
+<img src="https://user-images.githubusercontent.com/106041072/220315228-cd13172a-f26d-4f7f-a577-3a68e8af0725.png" width="300" height="300"/>  
+참고 블로그  
+https://jyeonnyang2.tistory.com/51
