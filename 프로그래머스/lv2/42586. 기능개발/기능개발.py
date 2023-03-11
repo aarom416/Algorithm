@@ -1,9 +1,9 @@
-def calu(x, y):
-    a = 0
-    while x < 100:
-        x += y
-        a += 1
-    return a
+def calu(x, y): 
+    cnt=0
+    while x<100:
+        x+=y
+        cnt+=1
+    return cnt
 def solution(progresses, speeds):
     answer = []
     stack = []
