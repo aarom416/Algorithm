@@ -1,3 +1,4 @@
+#다익스트라 알고리즘과 같음
 import sys
 from collections import deque
 input=sys.stdin.readline
