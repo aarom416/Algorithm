@@ -17,9 +17,9 @@ for book in book_list:
 
 #dic에서 최대 개수의 책을 찾는 로직
 for key, count in dic.items():
-    count_max = max(count_max, count)
+    count_max = max(count_max, count) # 이 로직 안쓰고 count_max = max(dic.values()) 사용가능
 
-#최대 개수의 책을 찾아 리스트로 저장
+#최대 개수의 책을 찾아 리스트로 저장하는 로직
 for key, count in dic.items():
     if count_max == count:
         book_max.append(key)
