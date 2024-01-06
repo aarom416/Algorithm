@@ -36,3 +36,19 @@ for _ in range(n):
         print("YES")
     else:
         print("NO")
+
+#다른 풀이 - 정규식 이용 (re 모듈)
+import sys
+import re #정규식 엔진에 대한 인터페이스 제공
+input = sys.stdin.readline
+
+n = int(input())
+
+pattern = re.compile('(100+1+|01)+') #정규식 패턴 입력
+for _ in range(n):
+    case = input().strip()
+    if pattern.fullmatch(case): #입력된 패턴과 문자열이 남는 부분 없이 완벽하게 일치하는 지 검사. 일치하지 않으면 None
+        print("YES")
+    else:
+        print("NO")
+        
