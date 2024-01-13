@@ -7,7 +7,7 @@ n = int(input())
 buildings = list(map(int, input().split()))
 answer=0
 
-def cal_gradient(x1,y1,x2,y2): #기울기 구하는 함수
+def cal_gradient(x1,y1,x2,y2): #기울기 구하는 함수 로직
     return (y2-y1)/(x2-x1)
 
 for idx, height in enumerate(buildings):
