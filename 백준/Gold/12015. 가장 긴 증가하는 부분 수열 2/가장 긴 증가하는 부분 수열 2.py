@@ -7,7 +7,7 @@ number_list = list(map(int,input().split()))
 result = [number_list[0]]
 
 def binary_search(start, end, target):
-    while start<=end:
+    while start <= end:
         mid = (start+end)//2
         if result[mid]>=target:
             end = mid-1
