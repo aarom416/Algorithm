@@ -12,5 +12,4 @@ def solution(n, costs):
                 answer+=cost[2]
                 connect.update([cost[0], cost[1]])
                 break
-            
     return answer
