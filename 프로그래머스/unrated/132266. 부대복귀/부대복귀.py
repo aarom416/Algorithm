@@ -6,7 +6,7 @@ def bfs(x,info,visited,sources):
     while q:
         x=q.popleft()
         for i in info[x]:
-            if visited[i]==-1:
+            if visited[i]==-1: #방문하지 않은 경우
                 q.append(i)
                 visited[i]=visited[x]+1
     return [visited[i] for i in sources]
