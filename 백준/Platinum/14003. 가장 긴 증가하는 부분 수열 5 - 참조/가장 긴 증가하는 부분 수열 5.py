@@ -1,7 +1,7 @@
 import sys
 
 n = int(input())
-number_list = list(map(int,input().split()))
+number_list = list(map(int,input().split()))    
 stack = [number_list[0]] 
 dp = [1]*(n+1) #각 원소별로 최대 증가하는 수열을 저장하기 위한 dp
 
