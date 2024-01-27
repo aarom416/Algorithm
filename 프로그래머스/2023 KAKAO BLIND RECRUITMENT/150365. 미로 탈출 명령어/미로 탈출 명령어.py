@@ -1,5 +1,5 @@
 #풀이참조
-import sys
+import sys  
 sys.setrecursionlimit(10**6)
 dx=[1,0,0,-1]
 dy=[0,-1,1,0]
