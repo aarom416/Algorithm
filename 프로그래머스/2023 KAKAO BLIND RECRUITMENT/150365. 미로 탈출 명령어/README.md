@@ -10,7 +10,7 @@
 
 코딩테스트 연습 > 2023 KAKAO BLIND RECRUITMENT 
 
-### 채점결과
+### 채점결과 
 
 Empty
 
