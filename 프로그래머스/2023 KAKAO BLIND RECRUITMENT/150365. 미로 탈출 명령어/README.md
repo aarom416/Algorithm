@@ -6,7 +6,7 @@
 
 메모리: 10.3 MB, 시간: 0.00 ms
 
-### 구분
+### 구분 
 
 코딩테스트 연습 > 2023 KAKAO BLIND RECRUITMENT 
 
