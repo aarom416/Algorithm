@@ -10,24 +10,24 @@ input = sys.stdin.readline
 def calDist(A,B):
     return abs(A[0]-B[0])+abs(A[1]-B[1])
 
-def isConnect(nowL):
+def isConnect(now_XY):
     visited=[[0 for j in range(5)] for i in range(5)]
-    tempL=[[0 for j in range(5)] for i in range(5)]
-    for r,c in nowL:
-        tempL[r][c]=1
-    visited[nowL[0][0]][nowL[0][1]]=1
-    cntCon=1
-    q=deque([[nowL[0][0],nowL[0][1]]])
+    temp=[[0 for j in range(5)] for i in range(5)]
+    for x,y in now_XY:
+        temp[x][y]=1
+    visited[now_XY[0][0]][now_XY[0][1]]=1
+    count=1
+    q=deque([[now_XY[0][0],now_XY[0][1]]])
     while(q):
-        r,c=q.popleft()
+        x,y=q.popleft()
         for k in range(4):
-            tempR=r+dx[k]
-            tempC=c+dy[k]
-            if 0<=tempR<5 and 0<=tempC<5 and visited[tempR][tempC]==0 and tempL[tempR][tempC]==1:
-                visited[tempR][tempC]=1
-                q.append([tempR,tempC])
-                cntCon+=1
-    if cntCon==size:
+            nx=x+dx[k]
+            ny=y+dy[k]
+            if 0<=nx<5 and 0<=ny<5 and visited[nx][ny]==0 and temp[nx][ny]==1:
+                visited[nx][ny]=1
+                q.append([nx,ny])
+                count+=1
+    if count==size:
         return True
     else:
         return False
