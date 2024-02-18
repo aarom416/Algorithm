@@ -7,6 +7,8 @@ n = int(input())
 stars_XY = [list(map(float, input().split())) for _ in range(n)]
 node = [[] for _ in range(n)]
 visited=[False]*(n)
+
+#각 별자리마다 거리를 구하고 프림 알고리즘을 사용하기 위해 각각의 거리와 연결 상태 저장
 for i in range(n-1):
     dist = 0
     for j in range(i+1,n):
