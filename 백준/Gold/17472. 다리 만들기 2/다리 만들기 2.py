@@ -8,6 +8,7 @@ lands = [list(map(int,input().split())) for _ in range(n)]
 dx = [0,0,-1,1]
 dy = [1,-1,0,0]
 
+#다리 위치 정보 저장
 def bfs(x,y):
     q = deque()
     q.append((x,y))
@@ -33,6 +34,8 @@ for i in range(n):
             bfs(i,j)
             lands_number+=1
 edges=[]
+
+#다리 위치 정보를 통해 다리 놓기
 for land_number, x, y in lands_info:
     for i in range(4):
         dist = 0
@@ -41,13 +44,17 @@ for land_number, x, y in lands_info:
         while True:
             if 0<=nx<n and 0<=ny<m:
                 current_land_number = land.get((nx,ny))
+                #같은 섬인 경우
                 if current_land_number == land_number:
                     break
+                #물 위에 있는 경우
                 if current_land_number == None:
                     dist+=1
+                    #같은 dx, dy 값을 더해주므로써 다리 놓는 방향 일관성 유지
                     nx += dx[i]
                     ny += dy[i]
                     continue
+                #거리가 2보다 작은 경우 
                 if dist<2:
                     break
                 edges.append((dist,land_number,current_land_number))
@@ -71,7 +78,9 @@ def union(x,y):
 
 count=0
 result=0
+#크루스칼 알고리즘 구현
 while count!=land_number:
+    #조건을 만족하는 섬이 없는 경우를 구분하기 위해 try, except 사용
     try:
         w,a,b = edges.pop()
     except:
