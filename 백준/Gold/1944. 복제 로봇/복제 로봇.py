@@ -7,7 +7,7 @@ n,m = map(int,input().split())
 
 graph = [input() for _ in range(n)]
 dx = [0,0,-1,1]
-dy = [1,-1,0,0]
+dy = [1,-1,0,0] 
 obj = dict() #로봇과 시작점을 나타낼 변수
 dist = [[-1]*n for _ in range(n)]
 edges = [[] for _ in range(m+1)]
