@@ -31,7 +31,7 @@ def dijkstra(start):
 dijkstra(start)
 visited = [end]
 temp = end
-#부모 노드를 찾아가면 경로 넣어줌
+#부모 노드를 찾아가면 경로 넣어줌 - 역추적
 while temp!=start: 
     temp = parents[temp]
     visited.append(temp)
