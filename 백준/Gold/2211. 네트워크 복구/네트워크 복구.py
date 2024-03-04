@@ -23,6 +23,7 @@ def dijkstra():
             cost = distance+i[1]
             if cost < dist[i[0]]:
                 dist[i[0]]=cost
+                #방문한 노드 정보를 해당 노드에 저장
                 visited[i[0]]=now
                 heapq.heappush(heap,(cost,i[0]))
 dijkstra()
