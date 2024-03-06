@@ -1,7 +1,7 @@
 import sys, heapq
 
 input = sys.stdin.readline
-
+  
 n,m = map(int,input().split())
 INF = int(1e9)
 computers = [[] for _ in range(n+1)]
