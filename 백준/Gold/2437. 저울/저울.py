@@ -6,6 +6,7 @@ chu = list(map(int,input().split()))
 
 chu.sort()
 
+#가능한 열린 구간 중 마지막 구간을 나타낼 변수
 check = 1 
 #만들 수 있는 최소 구간과 최대 구간을 구분
 #1 1 2 3 6 7 30 경우
