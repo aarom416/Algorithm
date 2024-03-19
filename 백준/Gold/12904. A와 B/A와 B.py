@@ -12,7 +12,7 @@ while len(end) != len(first):
         end.pop()
     else: #끝 문자가 B 이면 없애고 단순 거꾸로 정렬
         end.pop()
-        end.reverse()
+        end.reverse() 
 if first == end:
     print(1)
 else:
