@@ -6,7 +6,7 @@ n,m,start = map(int,input().split())
 
 INF = int(1e9)
 
-roads = [[] for _ in range(n+1)]
+roads = [[] for _ in range(n+1)]  
 dist = [INF] * (n+1)
 #목적지에서 집으로 가는 거리를 저장하기 위한 다익스트라 알고리즘
 def dijkstra(start): 
