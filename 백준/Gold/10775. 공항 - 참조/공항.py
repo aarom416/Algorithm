@@ -10,7 +10,7 @@ airplanes = [int(input()) for _ in range(P)]
 
 count=0
 docking = [0]*(G+1)
-docking[0]=10001
+docking[0]=10001  
 for idx, airplane in enumerate(airplanes):
     if docking[airplane] == 0:
         count+=1
