@@ -4,7 +4,7 @@ import sys
 
 input = sys.stdin.readline
 
-G = int(input())
+G = int(input())  
 P = int(input())
 airplanes = [int(input()) for _ in range(P)]    
 
