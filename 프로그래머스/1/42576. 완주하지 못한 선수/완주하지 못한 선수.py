@@ -29,4 +29,11 @@ def solution(participant, completion):
     for k,v in dic.items():
         if v > 0:
             return k
-    
+
+## 다른 사람 풀이 Counter 객체 간 뺴기가 가능
+
+import collections
+
+def solution(participant, completion):
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]
