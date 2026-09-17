@@ -1,7 +1,14 @@
-def solution(phoneBook):
-    phoneBook = sorted(phoneBook)
+from collections import Counter
 
-    for p1, p2 in zip(phoneBook, phoneBook[1:]):
-        if p2.startswith(p1):
-            return False
+def solution(phone_book):
+    
+    dic = Counter(phone_book)
+    
+    for phone_number in phone_book:
+        temp = ''
+        for p in phone_number:
+            temp += p
+            if temp in dic and temp != phone_number:
+                return False
+
     return True
