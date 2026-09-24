@@ -12,3 +12,16 @@ def solution(score):
                 answer[i] -=1
         
     return answer
+
+# 다른 풀이 - 해시 이용
+def solution(score):
+    
+    rank = sorted([sum(s) for s in score], reverse=True)
+    rank_dict = {}
+    
+    for i,r in enumerate(rank):
+        if r not in rank_dict:
+            rank_dict[r] = i+1
+        
+        
+    return [rank_dict[sum(s)] for s in score]
