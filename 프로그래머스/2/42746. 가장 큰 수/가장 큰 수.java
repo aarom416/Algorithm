@@ -2,8 +2,6 @@ import java.util.*;
 
 class Solution {
     public String solution(int[] numbers) {
-        String answer = "";
-        
         String[] answers = Arrays.stream(numbers)
             .mapToObj(String::valueOf)
             .sorted((a,b) -> (b+a).compareTo(a+b))
