@@ -12,3 +12,7 @@ def solution(my_string):
             continue
             
     return int(string_list[-1])
+
+# 다른 풀이 - "-" 를 "+ -" 를 이용해서 "3 + 4 + -3" 형식
+def solution(my_string):
+    return sum(int(s) for s in my_string.replace(' - ', ' + -').split(' + '))
