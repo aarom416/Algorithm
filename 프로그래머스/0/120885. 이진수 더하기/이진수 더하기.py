@@ -20,3 +20,7 @@ def solution(bin1, bin2):
         return str(upper) + ''.join(b)
     else:
         return ''.join(b)
+
+#다른 풀이 - 진법 교환 (2진법, 10진법)
+def solution(bin1, bin2):
+    return bin(int(bin1, 2) + int(bin2, 2))[2:]
