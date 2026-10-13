@@ -56,10 +56,7 @@ def solution(rectangle, characterX, characterY, itemX, itemY):
             nx = x + dx[i]
             ny = y + dy[i]
             
-            if (
-            0 <= nx < SIZE
-            and 0 <= ny < SIZE
-            and graph[ny][nx] == 1):
+            if 0 <= nx < SIZE and 0 <= ny < SIZE and graph[ny][nx] == 1:
                 graph[ny][nx] = graph[y][x] + 1
                 queue.append((nx, ny))
                 
