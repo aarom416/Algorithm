@@ -1,3 +1,6 @@
 def solution(s):    
-    return ' '.join([string.capitalize() for string in s.split(' ')])
+    return Jaden_Case(s)
         
+    
+def Jaden_Case(s):
+    return ' '.join([string.capitalize() for string in s.split(' ')])
