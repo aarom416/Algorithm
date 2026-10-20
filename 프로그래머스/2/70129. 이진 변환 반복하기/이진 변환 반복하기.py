@@ -1,8 +1,4 @@
 def solution(s):
-    answer = []
-    
-    clean_s = s.replace('0', "")
-    
     count = 0 
     remove_zero = 0
     
