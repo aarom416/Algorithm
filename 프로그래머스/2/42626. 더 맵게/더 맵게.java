@@ -3,10 +3,10 @@ import java.util.*;
 class Solution {
     public int solution(int[] scoville, int K) {
         int answer = 0;
-        
+    
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         
-        for (int s: scoville) {
+        for (int s : scoville) {
             queue.offer(s);
         }
         
