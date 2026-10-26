@@ -7,6 +7,8 @@ class Solution {
         Queue<Integer> q1 = new ArrayDeque<>();
         Queue<Integer> q2 = new ArrayDeque<>();
         
+        // 1<=queue1,2 의 원소 <= 10^9 
+        // 10^9 * 300,000 일 수 있으므로 int 값이 초과될 수 있으므로 long 타입 선언
         long totalQ1 = 0;
         long totalQ2 = 0;
         
@@ -19,6 +21,7 @@ class Solution {
             totalQ2 += q;
         }
         
+        // 하나의 큐에서 돌고 다시 돌아올 수 있으므로 * 2
         int limit = (queue1.length + queue2.length) * 2;
         
         // 각각 나눴을때 소숫점이 나오면 만들 수 없음
